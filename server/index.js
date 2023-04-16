@@ -6,6 +6,7 @@ import multer from "multer";
 import helmet from "helmet";
 import morgan from "morgan";
 import path from "path";
+import cors from "cors";
 import { fileURLToPath } from "url";
 
 //Configurations
