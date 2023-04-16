@@ -6,7 +6,8 @@ import multer from "multer";
 import helmet from "helmet";
 import morgan from "morgan";
 import path from "path";
-import { fileUrlToPath } from "url";
+import cors from "cors";
+import { fileURLToPath } from "url";
 
 //Configurations
 const __filename = fileURLToPath(import.meta.url);
