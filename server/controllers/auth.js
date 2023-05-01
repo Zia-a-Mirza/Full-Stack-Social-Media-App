@@ -1,4 +1,4 @@
-import bcrypt from "brycpt";
+import bcrypt from "bycpt";
 import jwt from "jsonwebtoken";
 import User from "../models/User.js"
 
@@ -19,7 +19,24 @@ export const register = async (req, res) => {
         const salt = await bcrypt.genSalt();
         const passwordHash = await bcrypt.hash(password, salt);
 
-    } catch (err) {
+        const newUser = new User({
+            firstName,
+            lastName,
+            email,
+            password: passwordHash,
+            friends,
+            location,
+            status,
+            viewedProfile: Math.floor(Math.random() * 50),
+            impressions: Math.floor(Math.random() * 50)
+        });
 
+        const savedUser = await newUser.save();
+        //Send a request succeeded status
+        res.status(201).json(savedUser);
+
+    } catch (err) {
+        //Send an internal server error
+        res.status(500).json({ error: err.message});
     }
 }
