@@ -13,6 +13,7 @@ import postRoutes from "./routes/posts.js";
 import { createPost } from "./controllers/posts.js";
 import { fileURLToPath } from "url";
 import { register } from "./controllers/auth.js"
+import { verifyToken } from "./middleware/auth.js";
 
 //Configurations
 const __filename = fileURLToPath(import.meta.url);
