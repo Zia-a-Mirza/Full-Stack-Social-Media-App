@@ -10,6 +10,9 @@ import cors from "cors";
 import authRoutes from "./routes/auth.js";
 import userRoutes from "./routes/users.js";
 import postRoutes from "./routes/posts.js";
+import User from "./models/User.js";
+import Post from "./models/Post.js";
+import { users, posts } from "./data/index.js";
 import { createPost } from "./controllers/posts.js";
 import { fileURLToPath } from "url";
 import { register } from "./controllers/auth.js"
@@ -61,4 +64,8 @@ mongoose.connect(process.env.MONGO_URL, {
     useUnifiedTopology: true,
 }).then(() => {
     app.listen(PORT, () => console.log(`Server Port: ${PORT}`))
+
+    //Inject data into database once
+    //User.insertMany(users);
+    //Post.insertMany(posts);
 }).catch((error) => console.log(`${error} did not connect`));
