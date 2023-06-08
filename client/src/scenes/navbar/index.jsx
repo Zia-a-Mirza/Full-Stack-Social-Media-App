@@ -113,7 +113,7 @@ const Navbar = () => {
               <MenuItem value={fullName}>
                 <Typography>{fullName}</Typography>
               </MenuItem>
-              <MenuItem onClick={() => dispatch(setLogout())}>Log Out</MenuItem>
+              <MenuItem onClick={() => dispatch(setLogout())}>Logout</MenuItem>
             </Select>
           </FormControl>
         </FlexBetween>
@@ -182,7 +182,7 @@ const Navbar = () => {
                   <Typography>{fullName}</Typography>
                 </MenuItem>
                 <MenuItem onClick={() => dispatch(setLogout())}>
-                  Log Out
+                  Logout
                 </MenuItem>
               </Select>
             </FormControl>
