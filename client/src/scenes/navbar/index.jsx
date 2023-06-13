@@ -35,11 +35,11 @@ const Navbar = () => {
 
   const neutralLight = theme.palette.neutral.light;
   const dark = theme.palette.neutral.dark;
-  const light = theme.palette.neutral.light;
   const background = theme.palette.background.default;
-  const primaryLight = theme.palette.primary.light;
   const primaryMain = theme.palette.primary.main;
   const alt = theme.palette.background.alt;
+  const logoLeft = theme.palette.gradient.logoLeft;
+  const logoRight = theme.palette.gradient.logoRight;
 
   //const fullName = `${user.firstName} ${user.lastName}`;
   const fullName = "Test User";
@@ -56,7 +56,7 @@ const Navbar = () => {
           onClick={() => navigate("/home")}
           sx={{
             color: "transparent",
-            backgroundImage: "linear-gradient(45deg, #FF4E00, #f0cb81)",
+            backgroundImage: `linear-gradient(45deg, ${logoLeft}, ${logoRight})`,
             WebkitBackgroundClip: "text",
             backgroundClip: "text",
             "&:hover": {

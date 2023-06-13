@@ -20,19 +20,34 @@ export const colorTokens = {
     1000: "#000000",
   },
   primary: {
-    50: "#E6FBFF",
-    100: "#CCF7FE",
-    200: "#99EEFD",
-    300: "#66E6FC",
-    400: "#33DDFB",
+    //Oranges
+    50: "#ffb600",
+    100: "#ffaa00",
+    200: "#ff9e00",
+    300: "#ff9100",
+    400: "#ff8500",
+    500: "#ff7900",
+    600: "#ff6d00",
+    700: "#ff6000",
+    800: "#ff5400",
+    900: "#ff4800",
 
-    //Logo color
-    500: "#c7582c",
+    //Purples
+    150: "#dec9e9",
+    1100: "#dac3e8",
+    1200: "#d2b7e5",
+    1300: "#c19ee0",
+    1400: "#b185db",
+    1500: "#a06cd5",
+    1600: "#9163cb",
+    1700: "#815ac0",
+    1800: "#7251b5",
+    1900: "#6247aa",
 
-    600: "#00A0BC",
-    700: "#006B7D",
-    800: "#00353F",
-    900: "#001519",
+    //Gradients
+    2000: "#FF4E00",
+    2100: "#f0cb81",
+    2200: "#5721df",
   },
 };
 
@@ -60,6 +75,12 @@ export const themeSettings = (mode) => {
               default: colorTokens.grey[900],
               alt: colorTokens.grey[800],
             },
+            gradient: {
+              logoLeft: colorTokens.primary[2000],
+              logoRight: colorTokens.primary[2100],
+              sunsetLeft: colorTokens.primary[500],
+              sunsetRight: colorTokens.primary[2200],
+            },
           }
         : {
             //Colors for light mode
@@ -78,6 +99,12 @@ export const themeSettings = (mode) => {
             background: {
               default: colorTokens.grey[10],
               alt: colorTokens.grey[0],
+            },
+            gradient: {
+              logoLeft: colorTokens.primary[2000],
+              logoRight: colorTokens.primary[50],
+              sunsetLeft: colorTokens.primary[500],
+              sunsetRight: colorTokens.primary[2200],
             },
           }),
     },

@@ -1,8 +1,6 @@
 import mongoose from "mongoose";
 
-const userIds = [
-  new mongoose.Types.ObjectId(),
-];
+const userIds = [new mongoose.Types.ObjectId()];
 
 export const users = [
   {
@@ -14,13 +12,13 @@ export const users = [
     picturePath: "profile.jpeg",
     friends: [],
     location: "Columbus, OH",
-    status: "test status",
+    bio: "test bio",
     viewedProfile: 11,
     impressions: 1111,
     createdAt: 111111,
     updatedAt: 111111,
     __v: 0,
-  }
+  },
 ];
 
 export const posts = [
@@ -33,12 +31,7 @@ export const posts = [
     description: "description",
     picturePath: "post.jpeg",
     userPicturePath: "profile.jpeg",
-    likes: new Map([
-      [userIds[0], true],
-    ]),
-    comments: [
-      "test comment",
-      "second test comment",
-    ],
-  }
+    likes: new Map([[userIds[0], true]]),
+    comments: ["test comment", "second test comment"],
+  },
 ];
