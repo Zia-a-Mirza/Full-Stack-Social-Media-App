@@ -246,8 +246,8 @@ const Form = () => {
                 border: `3px solid`,
                 borderImage: `linear-gradient(45deg, ${sunsetLeft}, ${sunsetRight}) 1`,
                 "&:hover": {
-                  color: palette.neutral.dark,
-                  background: palette.background.alt,
+                  color: "#E0E0E0",
+                  backgroundImage: `linear-gradient(45deg, #ff8500, #622ee6)`,
                 },
               }}>
               {isLogin ? "LOGIN" : "REGISTER"}
@@ -260,6 +260,7 @@ const Form = () => {
               sx={{
                 textDecoration: "underline",
                 color: primaryMain,
+                fontWeight: "bold",
                 "&:hover": { cursor: "pointer", color: palette.primary.dark },
               }}>
               {isLogin

@@ -1,8 +1,6 @@
 export const colorTokens = {
-  grey: {
-    //Lightmode Navbar Background color
-    0: "#FFFFFFF",
-
+  gray: {
+    0: "#FFFFFF",
     10: "#F6F6F6",
     50: "#F0F0F0",
     100: "#E0E0E0",
@@ -13,10 +11,7 @@ export const colorTokens = {
     600: "#4D4D4D",
     700: "#333333",
     800: "#1A1A1A",
-
-    //Background
     900: "#0f0f0f",
-
     1000: "#000000",
   },
   primary: {
@@ -65,15 +60,15 @@ export const themeSettings = (mode) => {
               light: colorTokens.primary[800],
             },
             neutral: {
-              dark: colorTokens.grey[100],
-              main: colorTokens.grey[200],
-              mediumMain: colorTokens.grey[300],
-              medium: colorTokens.grey[400],
-              light: colorTokens.grey[700],
+              dark: colorTokens.gray[100],
+              main: colorTokens.gray[200],
+              mediumMain: colorTokens.gray[300],
+              medium: colorTokens.gray[400],
+              light: colorTokens.gray[700],
             },
             background: {
-              default: colorTokens.grey[900],
-              alt: colorTokens.grey[800],
+              default: colorTokens.gray[900],
+              alt: colorTokens.gray[800],
             },
             gradient: {
               logoLeft: colorTokens.primary[2000],
@@ -90,15 +85,15 @@ export const themeSettings = (mode) => {
               light: colorTokens.primary[50],
             },
             neutral: {
-              dark: colorTokens.grey[700],
-              main: colorTokens.grey[500],
-              mediumMain: colorTokens.grey[400],
-              medium: colorTokens.grey[300],
-              light: colorTokens.grey[50],
+              dark: colorTokens.gray[700],
+              main: colorTokens.gray[500],
+              mediumMain: colorTokens.gray[400],
+              medium: colorTokens.gray[300],
+              light: colorTokens.gray[50],
             },
             background: {
-              default: colorTokens.grey[10],
-              alt: colorTokens.grey[0],
+              default: colorTokens.gray[10],
+              alt: colorTokens.gray[0],
             },
             gradient: {
               logoLeft: colorTokens.primary[2000],
