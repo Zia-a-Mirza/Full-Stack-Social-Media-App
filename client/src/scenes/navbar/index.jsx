@@ -46,7 +46,7 @@ const Navbar = () => {
 
   return (
     <FlexBetween padding="1rem 6%" backgroundColor={alt}>
-      <FlexBetween gap="1.5rem">
+      <FlexBetween gap="1rem">
         {/* Site Logo */}
         <img src="/assets/logo.png" alt="Logo" style={{ width: "35px" }} />
         <Typography
