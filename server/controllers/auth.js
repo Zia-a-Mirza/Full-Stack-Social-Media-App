@@ -5,8 +5,16 @@ import User from "../models/User.js";
 //User Registration
 export const register = async (req, res) => {
   try {
-    const { firstName, lastName, email, password, friends, location, bio } =
-      req.body;
+    const {
+      firstName,
+      lastName,
+      email,
+      password,
+      picturePath,
+      friends,
+      location,
+      bio,
+    } = req.body;
 
     //Encrypt passwords
     const salt = await bcrypt.genSalt();
@@ -17,6 +25,7 @@ export const register = async (req, res) => {
       lastName,
       email,
       password: passwordHash,
+      picturePath,
       friends,
       location,
       bio,
