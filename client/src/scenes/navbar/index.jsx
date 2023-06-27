@@ -41,8 +41,7 @@ const Navbar = () => {
   const logoLeft = theme.palette.gradient.logoLeft;
   const logoRight = theme.palette.gradient.logoRight;
 
-  //const fullName = `${user.firstName} ${user.lastName}`;
-  const fullName = "Test User";
+  const fullName = `${user.firstName} ${user.lastName}`;
 
   return (
     <FlexBetween padding="1rem 6%" backgroundColor={alt}>
