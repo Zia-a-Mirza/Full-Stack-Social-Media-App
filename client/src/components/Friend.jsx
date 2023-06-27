@@ -68,7 +68,7 @@ const Friend = ({ friendId, name, subtitle, userPicturePath }) => {
           backgroundImage: `linear-gradient(0deg, #ff8500, #622ee6)`,
           p: "0.6rem",
           "&:hover": {
-            backgroundImage: `linear-gradient(0deg, #ffaa00, #621ee6)`,
+            backgroundImage: `linear-gradient(0deg, #ff6000, #621ee6)`,
           },
         }}>
         {isFriend ? (
